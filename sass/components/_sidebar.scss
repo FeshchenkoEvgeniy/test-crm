@@ -1,0 +1,59 @@
+.sidenav-list {
+  min-width: 250px;
+}
+.sidenav-item {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.sidenav-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: var(--first-text-color);
+  padding: 11px;
+  border-radius: 8px;
+  transition: color 250ms var(--animation-function), background-color 250ms var(--animation-function),
+    fill 250ms var(--animation-function), stroke 250ms var(--animation-function);
+  &:hover {
+    color: #ffffff;
+    background-color: var(--accent-color);
+  }
+  &:hover .sidenav-icon {
+    stroke: #ffffff;
+    fill: #ffffff;
+  }
+  &::after {
+    content: ">";
+    position: absolute;
+    left: 90%;
+  }
+}
+.sidenav-link--active {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+.sidenav-icon {
+  margin-right: 14px;
+  stroke: currentColor;
+  fill: currentColor;
+}
+.user-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 500px;
+}
+.user-container {
+  margin-left: 12px;
+}
+.user-name {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.14px;
+}
+.user-proffesion {
+  color: #757575;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.12px;
+}

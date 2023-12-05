@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header-container">
+        <header class="page-header">
+          <a href="#" class="header-link"
+            ><svg width="37" height="37" class="header-logo">
+              <use href="./images/sprites.svg#logo"></use>
+            </svg>
+            Dashboard <span class="header-text">v.01</span>
+          </a>
+        </header>
+        <aside class="sidebar">
+          <nav class="sidenav">
+            <ul class="sidenav-list">
+              <li class="sidenav-item">
+                <a href="" class="sidenav-link"
+                  ><svg width="24" height="24" class="sidenav-icon">
+                    <use href="./images/sprites.svg#key-square"></use>
+                  </svg>
+                  Dashboard
+                </a>
+              </li>
+              <li class="sidenav-item">
+                <a href="" class="sidenav-link"
+                  ><svg width="24" height="24" class="sidenav-icon">
+                    <use href="./images/sprites.svg#3d-square"></use>
+                  </svg>
+                  Product
+                </a>
+              </li>
+              <li class="sidenav-item">
+                <a href="" class="sidenav-link sidenav-link--active"
+                  ><svg width="24" height="24" class="sidenav-icon">
+                    <use href="./images/sprites.svg#user-square"></use>
+                  </svg>
+                  Customers
+                </a>
+              </li>
+              <li class="sidenav-item">
+                <a href="" class="sidenav-link"
+                  ><svg width="24" height="24" class="sidenav-icon">
+                    <use href="./images/sprites.svg#wallet-money"></use>
+                  </svg>
+                  Income
+                </a>
+              </li>
+              <li class="sidenav-item">
+                <a href="" class="sidenav-link"
+                  ><svg width="24" height="24" class="sidenav-icon">
+                    <use href="./images/sprites.svg#discount-shape"></use>
+                  </svg>
+                  Promote
+                </a>
+              </li>
+              <li class="sidenav-item">
+                <a href="" class="sidenav-link"
+                  ><svg width="24" height="24" class="sidenav-icon">
+                    <use href="./images/sprites.svg#message-question"></use>
+                  </svg>
+                  Help
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="user-wrapper">
+            <div>
+              <img src="./images/Ellipse 8.jpg" alt="Evano" width="42" height="42" />
+            </div>
+            <div class="user-container">
+              <p class="user-name">Evano</p>
+              <p class="user-proffesion">Project Manager</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+      <main>
+        <section class="product">
+          <h1 class="main-product__title">Hello Evano 👋🏼,</h1>
+          <div class="product-container">
+            <div class="product-wrapper">
+              <div>
+                <h2 class="product-title">All Customers</h2>
+                <p class="product-text">Active Members</p>
+              </div>
+              <div>
+                <span class="input-wrapper">
+                  <input type="text" placeholder="Search" class="product-input" />
+                  <svg width="24" height="24" class="input-icon">
+                    <use href="./images/sprites.svg#search"></use>
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <table class="product-table">
+              <thead>
+                <tr class="product-list">
+                  <th class="product-list__title">Customer Name</th>
+                  <th class="product-list__title">Company</th>
+                  <th class="product-list__title">Phone Number</th>
+                  <th class="product-list__title">Email</th>
+                  <th class="product-list__title">Country</th>
+                  <th class="product-list__title">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="product-list">
+                  <td class="product-list__name">Jane Cooper</td>
+                  <td class="product-list__name">Microsoft</td>
+                  <td class="product-list__name">(225) 555-0118</td>
+                  <td class="product-list__name">jane@microsoft.com</td>
+                  <td class="product-list__name">United States</td>
+                  <td class="product-list__name"><p class="active">Active</p></td>
+                </tr>
+                <tr class="product-list">
+                  <td class="product-list__name">Floyd Miles</td>
+                  <td class="product-list__name">Yahoo</td>
+                  <td class="product-list__name">(205) 555-0100</td>
+                  <td class="product-list__name">floyd@yahoo.com</td>
+                  <td class="product-list__name">Kiribati</td>
+                  <td class="product-list__name"><p class="inactive">Inactive</p></td>
+                </tr>
+                <tr class="product-list">
+                  <td class="product-list__name">Ronald Richards</td>
+                  <td class="product-list__name">Adobe</td>
+                  <td class="product-list__name">(302) 555-0107</td>
+                  <td class="product-list__name">ronald@adobe.com</td>
+                  <td class="product-list__name">Israel</td>
+                  <td class="product-list__name"><p class="inactive">Inactive</p></td>
+                </tr>
+                <tr class="product-list">
+                  <td class="product-list__name">Marvin McKinney</td>
+                  <td class="product-list__name">Tesla</td>
+                  <td class="product-list__name">(252) 555-0126</td>
+                  <td class="product-list__name">marvin@tesla.com</td>
+                  <td class="product-list__name">Iran</td>
+                  <td class="product-list__name"><p class="active">Active</p></td>
+                </tr>
+                <tr class="product-list">
+                  <td class="product-list__name">Jerome Bell</td>
+                  <td class="product-list__name">Google</td>
+                  <td class="product-list__name">(629) 555-0129</td>
+                  <td class="product-list__name">jerome@google.com</td>
+                  <td class="product-list__name">Réunion</td>
+                  <td class="product-list__name"><p class="active">Active</p></td>
+                </tr>
+                <tr class="product-list">
+                  <td class="product-list__name">Kathryn Murphy</td>
+                  <td class="product-list__name">Microsoft</td>
+                  <td class="product-list__name">(406) 555-0120</td>
+                  <td class="product-list__name">kathryn@microsoft.com</td>
+                  <td class="product-list__name">Curaçao</td>
+                  <td class="product-list__name"><p class="active">Active</p></td>
+                </tr>
+                <tr class="product-list">
+                  <td class="product-list__name">Jacob Jones</td>
+                  <td class="product-list__name">Yahoo</td>
+                  <td class="product-list__name">(208) 555-0112</td>
+                  <td class="product-list__name">jacob@yahoo.com</td>
+                  <td class="product-list__name">Brazil</td>
+                  <td class="product-list__name"><p class="active">Active</p></td>
+                </tr>
+                <tr class="product-list">
+                  <td class="product-list__name">Kristin Watson</td>
+                  <td class="product-list__name">Facebook</td>
+                  <td class="product-list__name">(704) 555-0127</td>
+                  <td class="product-list__name">kristin@facebook.com</td>
+                  <td class="product-list__name">Åland Islands</td>
+                  <td class="product-list__name"><p class="inactive">Inactive</p></td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="product-pagination__wrapper">
+              <p class="product-result">Showing data 1 to 8 of 256K entries</p>
+              <ul class="pagination">
+                <li class="pagination-list"><button class="pagination-btn">&#60;</button></li>
+                <li class="pagination-list"><button class="pagination-btn pagination-btn--active">1</button></li>
+                <li class="pagination-list"><button class="pagination-btn">2</button></li>
+                <li class="pagination-list"><button class="pagination-btn">3</button></li>
+                <li class="pagination-list"><button class="pagination-btn">4</button></li>
+                <li class="pagination-list">...</li>
+                <li class="pagination-list"><button class="pagination-btn">40</button></li>
+                <li class="pagination-list"><button class="pagination-btn">&#62;</button></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer></footer>
+  </body>
+</html>
